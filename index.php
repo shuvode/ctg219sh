@@ -12,10 +12,13 @@
            echo "<p style='color:red'>Field must not be empty</p>";
        }
         else if(strlen($_POST['username'])<5||  strlen($_POST['username'])>10){
-            echo "<p style='color:red'>Field must be between 6 and 10 char</p>";
+            echo "<p style='color:blue'>Field must be between 6 and 10 char</p>";
+        }
+        else if{
+            echo "Welcome:".$_POST['username'];
         }
         else{
-            echo "Welcome:".$_POST['username'];
+            echo "Welcome home:".$_POST['username'];
         }
     }
 
